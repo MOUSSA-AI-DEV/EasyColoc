@@ -26,7 +26,17 @@ class User extends Authenticatable
         'is_admin'
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
 
+     
+        static::created(function ($user) {
+            if (User::count() === 1) {
+                $user->update(['is_admin' => true]);
+            }
+        });
+    }
     /**
      * The attributes that should be hidden for serialization.
      *
