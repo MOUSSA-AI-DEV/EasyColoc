@@ -15,8 +15,8 @@
 <body class="font-sans antialiased bg-gray-50 text-gray-900">
 
 @php
-    $orange = '#e7522e';
-    $purple = '#400eb3';
+    $accent = '#e7522e';
+    $teal = '#0f766e';
     $slate  = '#5f6b73';
 @endphp
 
@@ -29,11 +29,11 @@
             <!-- LOGO EASYCOLOC -->
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white font-bold"
-                     style="background: linear-gradient(135deg, {{ $purple }}, {{ $orange }});">
+                     style="background: linear-gradient(135deg, {{ $teal }}, {{ $accent }});">
                     EC
                 </div>
 
-                <span class="text-xl font-bold" style="color: {{ $purple }};">
+                <span class="text-xl font-bold" style="color: {{ $teal }};">
                     EasyColoc
                 </span>
             </div>
@@ -47,7 +47,7 @@
 
                 <a href="{{ route('register') }}"
                    class="px-4 py-2 text-sm font-medium text-white rounded-lg"
-                   style="background: linear-gradient(135deg, #400eb3, #e7522e);;">
+                   style="background: linear-gradient(135deg, #0f766e, #e7522e);;">
                     Créer un compte
                 </a>
             </div>
@@ -62,7 +62,7 @@
             <div>
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight">
                     Simplifiez la gestion de votre
-                    <span style="color: {{ $orange }};">colocation</span>
+                    <span style="color: {{ $accent }};">colocation</span>
                 </h1>
 
                 <p class="mt-6 text-lg" style="color: {{ $slate }};">
@@ -74,13 +74,13 @@
                 <div class="mt-8 flex gap-4">
                     <a href="{{ route('register') }}"
                        class="px-6 py-3 text-white font-semibold rounded-xl shadow"
-                       style="background-color: {{ $purple }};">
+                       style="background-color: {{ $teal }};">
                         Commencer gratuitement
                     </a>
 
                     <a href="{{ route('login') }}"
                        class="px-6 py-3 font-semibold rounded-xl border"
-                       style="color: {{ $purple }};">
+                       style="color: {{ $teal }};">
                         J’ai déjà un compte
                     </a>
                 </div>
@@ -88,7 +88,7 @@
 
             <!-- RIGHT VISUAL CARD -->
             <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-                <h3 class="text-lg font-semibold mb-4" style="color: {{ $purple }};">
+                <h3 class="text-lg font-semibold mb-4" style="color: {{ $teal }};">
                     Exemple de remboursement
                 </h3>
 
@@ -97,7 +97,7 @@
                     <div class="p-4 border rounded-xl">
                         <div class="flex justify-between">
                             <span>Mohammed</span>
-                            <span class="font-semibold" style="color: {{ $orange }};">
+                            <span class="font-semibold" style="color: {{ $accent }};">
                                 doit 120 MAD
                             </span>
                         </div>
@@ -109,7 +109,7 @@
                     <div class="p-4 border rounded-xl">
                         <div class="flex justify-between">
                             <span>Yassine</span>
-                            <span class="font-semibold" style="color: {{ $purple }};">
+                            <span class="font-semibold" style="color: {{ $teal }};">
                                 reçoit 85 MAD
                             </span>
                         </div>
@@ -121,7 +121,7 @@
                 </div>
 
                 <button class="mt-6 w-full py-2 text-white font-semibold rounded-lg"
-                        style="background-color: {{ $orange }};">
+                        style="background-color: {{ $accent }};">
                     Marquer payé
                 </button>
             </div>

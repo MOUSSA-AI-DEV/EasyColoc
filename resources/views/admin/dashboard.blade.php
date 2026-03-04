@@ -30,10 +30,10 @@
 
             <!-- Logo -->
             <div class="flex items-center justify-center h-16 border-b border-gray-100 px-4">
-                <span class="text-xl font-bold text-indigo-600 truncate transition-opacity duration-300"
+                <span class="text-xl font-bold text-green-600 truncate transition-opacity duration-300"
                     :class="sidebarOpen ? 'block' : 'hidden lg:block'">AdminPanel</span>
                 <!-- Icon for mini sidebar -->
-                <svg :class="sidebarOpen ? 'hidden' : 'hidden md:block lg:hidden'" class="w-8 h-8 text-indigo-600"
+                <svg :class="sidebarOpen ? 'hidden' : 'hidden md:block lg:hidden'" class="w-8 h-8 text-green-600"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -44,7 +44,7 @@
             <nav class="flex-1 px-3 py-6 space-y-2 overflow-y-auto">
                 <!-- Active: Dashboard -->
                 <a href="#"
-                    class="flex items-center px-3 py-3 text-indigo-700 bg-indigo-50 rounded-lg group transition-colors"
+                    class="flex items-center px-3 py-3 text-green-700 bg-green-50 rounded-lg group transition-colors"
                     :class="sidebarOpen ? 'justify-start' : 'justify-center lg:justify-start'">
                     <svg class="w-6 h-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -110,7 +110,7 @@
                         <!-- 1. Total Users Card -->
                         <div
                             class="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex items-center hover:shadow-md transition-shadow">
-                            <div class="p-3 rounded-xl bg-indigo-50 text-indigo-600 mr-4">
+                            <div class="p-3 rounded-xl bg-green-50 text-green-600 mr-4">
                                 <!-- Users icon -->
                                 <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -161,7 +161,7 @@
                         <!-- 4. Total Colocations Card -->
                         <div
                             class="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex items-center hover:shadow-md transition-shadow">
-                            <div class="p-3 rounded-xl bg-indigo-50 text-indigo-600 mr-4">
+                            <div class="p-3 rounded-xl bg-green-50 text-green-600 mr-4">
                                 <!-- Home icon -->
                                 <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

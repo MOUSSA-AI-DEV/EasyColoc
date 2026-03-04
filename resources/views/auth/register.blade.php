@@ -1,12 +1,12 @@
 <x-guest-layout>
     @php
-        $orange = '#e7522e';
-        $purple = '#400eb3';
+        $accent = '#e7522e';
+        $teal = '#0f766e';
         $slate  = '#5f6b73';
     @endphp
 
     <x-slot name="header">
-        <h1 class="text-2xl font-bold" style="color: {{ $purple }};">Créer un compte</h1>
+        <h1 class="text-2xl font-bold" style="color: {{ $teal }};">Créer un compte</h1>
         <p class="mt-2 text-sm" style="color: {{ $slate }};">
             Rejoignez vos colocataires dès aujourd’hui.
         </p>
@@ -55,7 +55,7 @@
 
             <button type="submit"
                     class="inline-flex items-center px-6 py-2.5 rounded-lg font-semibold text-xs uppercase tracking-widest text-white"
-                    style="background-color: {{ $purple }};">
+                    style="background-color: {{ $teal }};">
                 Créer mon compte
             </button>
         </div>

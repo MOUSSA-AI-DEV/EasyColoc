@@ -1,13 +1,13 @@
 <x-guest-layout>
     @php
-        $orange = '#e7522e';
-        $purple = '#400eb3';
+        $accent = '#e7522e';
+        $teal = '#0f766e';
         $slate  = '#5f6b73';
-        $grad   = "linear-gradient(135deg, {$purple}, {$orange})";
+        $grad   = "linear-gradient(135deg, {$teal}, {$accent})";
     @endphp
 
     <x-slot name="header">
-        <h1 class="text-2xl font-bold" style="color: {{ $purple }};">Connexion</h1>
+        <h1 class="text-2xl font-bold" style="color: {{ $teal }};">Connexion</h1>
         <p class="mt-2 text-sm" style="color: {{ $slate }};">
             Connectez-vous pour gérer vos dépenses de colocation.
         </p>
@@ -28,7 +28,7 @@
             <x-text-input
                 id="email"
                 class="block mt-1 w-full bg-white border-gray-300 focus:border-transparent focus:ring-2"
-                style="--tw-ring-color: {{ $purple }};"
+                style="--tw-ring-color: {{ $teal }};"
                 type="email"
                 name="email"
                 :value="old('email')"
@@ -46,7 +46,7 @@
             <x-text-input
                 id="password"
                 class="block mt-1 w-full bg-white border-gray-300 focus:border-transparent focus:ring-2"
-                style="--tw-ring-color: {{ $orange }};"
+                style="--tw-ring-color: {{ $accent }};"
                 type="password"
                 name="password"
                 required
@@ -61,7 +61,7 @@
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox"
                        class="rounded border-gray-300 shadow-sm focus:ring-2"
-                       style="accent-color: {{ $purple }};"
+                       style="accent-color: {{ $teal }};"
                        name="remember">
                 <span class="ms-2 text-sm" style="color: {{ $slate }};">
                     Se souvenir de moi
@@ -69,7 +69,7 @@
             </label>
 
             @if (Route::has('password.request'))
-                <a class="text-sm font-medium underline" style="color: {{ $purple }};"
+                <a class="text-sm font-medium underline" style="color: {{ $teal }};"
                    href="{{ route('password.request') }}">
                     Mot de passe oublié ?
                 </a>
@@ -81,7 +81,7 @@
             <button type="submit"
                     class="w-full inline-flex justify-center items-center px-4 py-2 rounded-xl text-sm font-semibold text-white
                            shadow-md hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-offset-2"
-                    style="background: {{ $grad }}; --tw-ring-color: {{ $purple }};">
+                    style="background: {{ $grad }}; --tw-ring-color: {{ $teal }};">
                 Se connecter
             </button>
         </div>
@@ -90,7 +90,7 @@
         @if (Route::has('register'))
             <p class="text-center text-sm pt-2" style="color: {{ $slate }};">
                 Pas de compte ?
-                <a href="{{ route('register') }}" class="font-semibold underline" style="color: {{ $purple }};">
+                <a href="{{ route('register') }}" class="font-semibold underline" style="color: {{ $teal }};">
                     Créer un compte
                 </a>
             </p>

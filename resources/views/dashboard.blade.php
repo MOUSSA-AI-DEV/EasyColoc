@@ -2,7 +2,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <!-- Reputation Card -->
         <div
-            class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-6 text-white shadow-lg transform hover:scale-[1.02] transition-all duration-300">
+            class="bg-gradient-to-br from-green-500 to-teal-600 rounded-3xl p-6 text-white shadow-lg transform hover:scale-[1.02] transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
                 <div class="p-3 bg-white/20 rounded-2xl">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -14,7 +14,7 @@
                 <span class="text-xs font-bold uppercase tracking-wider opacity-80">Reputation</span>
             </div>
             <div class="text-3xl font-black mb-1">{{ auth()->user()->reputation ?? 0 }}</div>
-            <div class="text-sm font-medium opacity-80 decoration-indigo-200">User Performance Score</div>
+            <div class="text-sm font-medium opacity-80 decoration-green-200">User Performance Score</div>
         </div>
 
         <!-- Paid Payments Card -->

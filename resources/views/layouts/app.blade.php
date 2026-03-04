@@ -48,7 +48,7 @@
             <!-- Logo Section -->
             <div class="h-24 flex items-center px-8 border-b border-slate-100">
                 <div
-                    class="relative flex items-center justify-center w-10 h-10 mr-4 rounded-xl shadow-lg bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 overflow-hidden group">
+                    class="relative flex items-center justify-center w-10 h-10 mr-4 rounded-xl shadow-lg bg-gradient-to-br from-emerald-500 via-teal-500 to-green-500 overflow-hidden group">
                     <div class="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors duration-300">
                     </div>
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@
                 <!-- Ballet of Colors Branding -->
                 <div class="flex flex-col">
                     <span
-                        class="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600">
+                        class="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-lime-600">
                         EasyColoc
                     </span>
                 </div>
@@ -71,8 +71,8 @@
                 <p class="px-3 text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Main Menu</p>
 
                 <a href="{{ route('dashboard') }}"
-                    class="flex items-center px-4 py-3.5 bg-gradient-to-r from-pink-50 to-purple-50 text-purple-700 rounded-2xl font-semibold transition-all shadow-[0_4px_12px_rgba(236,72,153,0.08)] border border-pink-100/50">
-                    <div class="p-1.5 mr-3 bg-white rounded-lg shadow-sm text-pink-500">
+                    class="flex items-center px-4 py-3.5 bg-gradient-to-r from-emerald-50 to-teal-50 text-teal-700 rounded-2xl font-semibold transition-all shadow-[0_4px_12px_rgba(236,72,153,0.08)] border border-emerald-100/50">
+                    <div class="p-1.5 mr-3 bg-white rounded-lg shadow-sm text-emerald-500">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
@@ -116,7 +116,7 @@
         <div class="p-6 border-t border-slate-100 bg-gradient-to-b from-transparent to-slate-50/50">
             <div class="flex items-center p-3 rounded-2xl hover:bg-white hover:shadow-md transition-all cursor-pointer">
                 <div class="relative">
-                    <img src="https://ui-avatars.com/api/?name={{ urlencode(substr(auth()->user()->name, 0, 1)) }}&background=ec4899&color=fff&font-size=0.35&bold=true"
+                    <img src="https://ui-avatars.com/api/?name={{ urlencode(substr(auth()->user()->name, 0, 1)) }}&background=10b981&color=fff&font-size=0.35&bold=true"
                         alt="{{ auth()->user()->name }}"
                         class="w-11 h-11 rounded-xl shadow-sm border-2 border-white object-cover">
                     <div
@@ -141,10 +141,10 @@
 
         <!-- Abstract Background Elements -->
         <div
-            class="absolute top-0 right-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-[100px] opacity-20 transform translate-x-1/3 -translate-y-1/3 pointer-events-none">
+            class="absolute top-0 right-0 w-96 h-96 bg-emerald-300 rounded-full mix-blend-multiply filter blur-[100px] opacity-20 transform translate-x-1/3 -translate-y-1/3 pointer-events-none">
         </div>
         <div
-            class="absolute bottom-0 left-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-[100px] opacity-20 transform -translate-x-1/3 translate-y-1/3 pointer-events-none">
+            class="absolute bottom-0 left-0 w-96 h-96 bg-teal-300 rounded-full mix-blend-multiply filter blur-[100px] opacity-20 transform -translate-x-1/3 translate-y-1/3 pointer-events-none">
         </div>
 
         <!-- Top Header -->
@@ -167,8 +167,8 @@
             <div class="flex items-center gap-5">
                 @if (!auth()->user()->activeColocation())
                     <a href="{{ route('colocations.create') }}"
-                        class="hidden sm:flex items-center px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-bold hover:shadow-md hover:border-pink-200 transition-all group">
-                        <svg class="w-4 h-4 mr-2 text-pink-500 group-hover:rotate-90 transition-transform duration-300"
+                        class="hidden sm:flex items-center px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl text-sm font-bold hover:shadow-md hover:border-emerald-200 transition-all group">
+                        <svg class="w-4 h-4 mr-2 text-emerald-500 group-hover:rotate-90 transition-transform duration-300"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4">
                             </path>
@@ -183,7 +183,7 @@
                 <form method="POST" action="{{ route('logout') ?? '#' }}" class="m-0">
                     @csrf
                     <button type="submit"
-                        class="group flex items-center px-6 py-2.5 rounded-xl text-sm font-bold text-white shadow-lg shadow-pink-500/25 transition-all hover:shadow-pink-500/40 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                        class="group flex items-center px-6 py-2.5 rounded-xl text-sm font-bold text-white shadow-lg shadow-emerald-500/25 transition-all hover:shadow-emerald-500/40 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
                         style="background: linear-gradient(135deg, #f43f5e, #8b5cf6, #3b82f6); background-size: 200% 200%; animate: gradient 5s ease infinite;">
                         <span>Logout</span>
                         <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none"

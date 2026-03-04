@@ -98,7 +98,7 @@
                                             <form action="{{ route('payments.markAsPaid', $payment) }}" method="POST">
                                                 @csrf
                                                 <button type="submit"
-                                                    class="text-xs font-medium text-white bg-indigo-600 hover:bg-indigo-700 px-3 py-1.5 rounded-lg transition-colors">
+                                                    class="text-xs font-medium text-white bg-green-600 hover:bg-green-700 px-3 py-1.5 rounded-lg transition-colors">
                                                     Marqué payé
                                                 </button>
                                             </form>
@@ -123,7 +123,7 @@
         <div class="lg:col-span-1 space-y-6">
             <div class="bg-white shadow-sm rounded-xl border border-gray-200/70 p-6">
                 <h4 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
                         </path>
@@ -135,7 +135,7 @@
                         <li class="py-3 flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <div
-                                    class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 font-bold text-xs uppercase">
+                                    class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold text-xs uppercase">
                                     {{ substr($user->name, 0, 2) }}
                                 </div>
                                 <div>
@@ -156,9 +156,9 @@
                             @csrf
                             <div class="flex gap-2">
                                 <input type="email" name="email" required placeholder="Email de l'invité"
-                                    class="flex-1 text-sm rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
+                                    class="flex-1 text-sm rounded-lg border-gray-300 focus:border-green-500 focus:ring-green-500">
                                 <button type="submit"
-                                    class="bg-indigo-600 text-white p-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                                    class="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700 transition-colors">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M12 4v16m8-8H4"></path>
@@ -173,7 +173,7 @@
             <!-- Categories Section (Owner Management) -->
             <div class="bg-white shadow-sm rounded-xl border border-gray-200/70 p-6">
                 <h4 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 mr-2 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
                         </path>
@@ -187,9 +187,9 @@
                         <input type="hidden" name="colocation_id" value="{{ $colocation->id }}">
                         <div class="flex gap-2">
                             <input type="text" name="title" required placeholder="Nouvelle catégorie"
-                                class="flex-1 text-sm rounded-lg border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
+                                class="flex-1 text-sm rounded-lg border-gray-300 focus:border-green-500 focus:ring-green-500">
                             <button type="submit"
-                                class="bg-indigo-600 text-white p-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                                class="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700 transition-colors">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 4v16m8-8H4"></path>
@@ -240,7 +240,7 @@
                         Dépenses
                     </h4>
                     <button onclick="document.getElementById('expense-form').classList.toggle('hidden')"
-                        class="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center">
+                        class="text-sm font-medium text-green-600 hover:text-green-700 flex items-center">
                         <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
                             </path>
@@ -282,7 +282,7 @@
                             </div>
                             <div class="sm:col-span-2 md:col-span-2 flex items-end">
                                 <button type="submit"
-                                    class="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium">
+                                    class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
                                     Enregistrer la dépense
                                 </button>
                             </div>

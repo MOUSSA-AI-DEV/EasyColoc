@@ -33,7 +33,7 @@
 
                             <div class="space-y-3 mb-6 flex-grow">
                                 <div class="flex items-center text-sm text-gray-600">
-                                    <svg class="w-5 h-5 mr-3 shrink-0 text-indigo-500"
+                                    <svg class="w-5 h-5 mr-3 shrink-0 text-green-500"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -43,7 +43,7 @@
                                     <span>{{ $colocation->users->count() }} Membre(s)</span>
                                 </div>
                                 <div class="flex items-center text-sm text-gray-600">
-                                    <svg class="w-5 h-5 mr-3 shrink-0 text-indigo-500"
+                                    <svg class="w-5 h-5 mr-3 shrink-0 text-green-500"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -57,7 +57,7 @@
                             <div
                                 class="flex items-center justify-between mt-auto pt-4 border-t border-gray-200">
                                 <a href="{{ route('colocations.show', $colocation) }}"
-                                    class="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-700 group">
+                                    class="inline-flex items-center text-sm font-medium text-green-600 hover:text-green-700 group">
                                     Détails
                                     <svg class="ml-1 w-4 h-4 transform group-hover:translate-x-1 transition-transform"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
